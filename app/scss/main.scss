@@ -1,0 +1,195 @@
+@import "vars";
+@import "fonts";
+@import "libs";
+
+::placeholder {
+	color: #666;
+}
+
+::selection {
+	background-color: $accent;
+	color: #fff;
+}
+
+body {
+	font-size: 16px;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.56;
+	font-family: $default-font;
+	overflow-x: hidden;
+	color: $text;
+	input, textarea {
+		border: #666 1px solid;
+		outline: none;
+		&:focus:required:invalid {
+			border-color: red;
+		}
+		&:required:valid {
+			border-color: green;
+		}
+	}
+}
+
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	&.img-width {
+		width: 100%;
+	}
+}
+
+.text-center {
+	text-align: center;
+}
+
+b, strong {
+	font-weight: bold;
+}
+#avis-wrapper {
+	background-repeat: repeat;
+	background-size: 100% auto;
+}
+
+.avis-head {
+	font-family: 'Montserrat', sans-serif;
+	padding-top: 25px;
+	&_flex {
+		display: flex;
+		align-items: center;
+		border-bottom: 2px solid $text;
+	}
+	&_about {
+		font-size: 18px;
+		line-height: 1.4;
+		&-company {
+			color: $accent;
+		}
+		&-companyname {
+			color: $text;
+			font-weight: bold;
+		}
+		&-short {
+			color: $gray;
+			font-weight: bold;
+		}
+	}
+	&_addr {
+		font-size: 15px;
+		margin-left: auto;
+		margin-right: 15px;
+	}
+}
+
+.head-link {
+	line-height: 1;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 10px;
+	color: $accent;
+	text-decoration: none;
+	&:hover, &:focus, &:active {
+		color: $accent;
+	}
+}
+
+.phone {
+	font-size: 16px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: bold;
+	color: $text;
+	&:hover, &:focus, &:active {
+		color: $text;
+	}
+}
+
+.avis-present {
+	text-align: center;
+	padding-top: 10%;
+	padding-bottom: 10%;
+	h1.main-title {
+		margin: 0;
+		padding: 0;
+		font-size: 70px;
+		line-height: 1.14;
+		font-weight: normal;
+		color: $accent;
+	}
+	.present-desc {
+		color: #1f1f1f;
+		font-size: 25px;
+		width: 600px;
+		max-width: 100%;
+		margin: 27px auto;
+		
+	}
+	.present-button {
+			margin-top: 20px;
+	}
+}
+
+.present-button {
+	display: inline-block;
+	padding: 20px 35px;
+	background-color: $text;
+	color: #ffffff !important;
+	text-decoration: none !important;
+	text-align: center;
+	font-family: "Montserrat", sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	border: none;
+	border-radius: 10em;
+}
+
+.s-default {
+	.section-content {
+		padding: $gutter;
+		background-color: #ffffff;
+		.section-title {
+			font-size: 36px;
+			font-family: "Montserrat", sans-serif;
+			color: #202020;
+			font-weight: 600;
+			margin: 0;
+			padding: 0;
+			padding-left: $gutter - 10;
+			border-left: 3px solid red;
+			line-height: 100%;
+			margin-bottom: $gutter * 2;
+		}
+	}
+}
+
+.s-about {
+	.advantage-card {
+		border: 3px solid #F5F5F5;
+		padding: 30px 10px 10px 10px;
+		font-family: "Montserrat", sans-serif;
+		transition: backgound-color 0.25s ease;
+		display: flex;
+		&-text {
+			margin-left: 26px;
+		}
+		&:hover {
+			background-color: #f5f5f5;
+		}
+		&-title {
+			font-size: 20px;
+			font-weight: 600;
+			color: rgba($text, 0.65);
+		}
+		&-desc {
+			margin-bottom: 5px;
+			line-height: 130%;
+			color: rgba($text, 0.65);
+			font-weight: 500;
+		}
+	}
+}
+
+
+
+@import "media"; // Always at the end
