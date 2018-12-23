@@ -5,21 +5,87 @@
 
 // ≥1200px
 @include media-breakpoint-down(lg) {
-	
+	.need-help-content {
+    display: block;
+    text-align: center;
+  }
+  .need-help-form {
+    margin-top: 20px;
+  }
+  .need-help form >* {
+    display: block;
+    width: 100%;
+  }
+  .need-help form input[type=text] {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .avis-head_flex {
+    display: block;
+    text-align: center;
+    .img-responsive {
+      display: inline-block;
+    }
+  }
+  .avis-head_about {
+    margin-left: 0;
+    margin: 10px 0;
+  }
+  .avis-head_addr {
+    margin: 0;
+  }
 }
 
 // ≥992px
 @include media-breakpoint-down(md) {
-
+  .s-about .advantage-card {
+    display: block;
+    &-icon {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  }
+  .avis-present h1.main-title {
+    font-size: 50px;
+  }
+  #contacts .contacts-card {
+    padding: 25px;
+  }
+  .review-sertificate {
+    width: 32.5%;
+  }
 }
 
 // ≥768px
 @include media-breakpoint-down(sm) {
-
+  .avis-present h1.main-title {
+    font-size: 40px;
+  }
+  .avis-present .present-desc {
+    font-size: 16px;
+  }
+  .s-default .section-content {
+    padding: 10px;
+  }
+  .need-help-title {
+    font-size: 24px;
+  }
+  #contacts .contacts-card {
+    padding: 10px;
+  }
+  .review-sertificate {
+    width: 49%;
+  }
 }
 
 // ≥576px
 @include media-breakpoint-down(xs) {
+  .avis-present h1.main-title {
+    font-size: 35px;
+  }
+  .review-sertificate {
+    width: 100%;
+  }
 
 }
 
