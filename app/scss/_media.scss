@@ -48,6 +48,9 @@
   .avis-present h1.main-title {
     font-size: 50px;
   }
+  .avis-present .subtitle {
+    font-size: 25px;
+  }
   #contacts .contacts-card {
     padding: 25px;
   }
@@ -60,6 +63,9 @@
 @include media-breakpoint-down(sm) {
   .avis-present h1.main-title {
     font-size: 40px;
+  }
+  .avis-present .subtitle {
+    font-size: 20px;
   }
   .avis-present .present-desc {
     font-size: 16px;
